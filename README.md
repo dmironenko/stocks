@@ -5,12 +5,12 @@ This project consists of:
 
 # Requirement
 Backend:
-Java 8
+- Java 8
 
 Frontend:
-Angular CLI: 1.6.4
-Node: 8.9.0
-Angular: 5.2.6
+- Angular CLI: 1.6.4
+- Node: 8.9.0
+-Angular: 5.2.6
 
 Docker
 
