@@ -1,7 +1,7 @@
 # Description
 This project contains: 
-- backend  - spring boot app
-- frontend - angular app.
+- backend: spring boot
+- frontend: angular
 
 # Requirement
 Backend:
@@ -24,15 +24,15 @@ PUT | /stocks/{id} | update a stock
 
 # Docker
 Frontend and backend have Dockerfile-s to create images. 
-- backend uses openjdk-8 container.
 - frontend runs in nginx server with additional configuration to access backend (see stocks-ui\nginx\default.conf)
+- backend uses openjdk-8 container.
 
 # How to create images
 run ./create_image.sh in each project.
 
 # How to run
 Project contains docker-compose.yml file to run both containers.
-run docker-compose up -d
+To run applications just run docker-compose up -d.
 
 # How to run as developer
 - backend:  run AssignmentApplication.main from your IDE with spring profile dev
