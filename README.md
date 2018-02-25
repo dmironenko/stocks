@@ -1,5 +1,5 @@
 # Description
-This project contains: 
+This project consists of: 
 - backend: spring boot
 - frontend: angular
 
@@ -13,6 +13,18 @@ Node: 8.9.0
 Angular: 5.2.6
 
 Docker
+
+#Technologies:
+Frontend and backend are separate application and implemented to run in the separate docker containers.
+
+Backend build on top of spring-boot
+- REST API          - spring-web is used
+- access db         - spring-data and Hibernate
+- in memory storage - H2
+
+In memory db + Hibernate is used to handle concurrency and lastUpdate timestamp.
+
+Frontend is angular application with material design.
 
 # API
 Method       | Path          | Description   |
@@ -28,11 +40,11 @@ Frontend and backend have Dockerfile-s to create images.
 - backend uses openjdk-8 container.
 
 # How to create images
-run ./create_image.sh in each project.
+run ./create_image.sh in each project or ./create_images.sh from root
 
 # How to run
 Project contains docker-compose.yml file to run both containers.
-To run applications just run docker-compose up -d.
+To run applications just run docker-compose up -d. Frontend will run on the port 80.
 
 # How to run as developer
 - backend:  run AssignmentApplication.main from your IDE with spring profile dev
