@@ -1,13 +1,13 @@
 # Description
 This project consists of: 
-- backend: spring boot
-- frontend: angular
+- backend: Spring Boot application
+- frontend: Angular application
 
 # Requirement
-Backend:
+Backend
 - Java 8
 
-Frontend:
+Frontend
 - Angular CLI: 1.6.4
 - Node: 8.9.0
 -Angular: 5.2.6
@@ -18,7 +18,7 @@ Docker
 Frontend and backend are separate application and implemented to run in the separate docker containers.
 
 Backend build on top of spring-boot
-- REST API          - spring-web is used
+- REST API          - spring-web
 - access db         - spring-data and Hibernate
 - in memory storage - H2
 
