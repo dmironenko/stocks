@@ -14,7 +14,7 @@ Angular: 5.2.6
 
 Docker
 
-#Technologies
+# Technologies
 Frontend and backend are separate application and implemented to run in the separate docker containers.
 
 Backend build on top of spring-boot
