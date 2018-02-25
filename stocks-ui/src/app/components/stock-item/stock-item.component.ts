@@ -64,6 +64,7 @@ export class StockItemComponent implements OnInit, OnDestroy {
     this.stockService.saveStockById(this.stock)
       .subscribe(stock => {
         this.stock = stock;
+        this.saveFailed = false;
         this.router.navigate(['/stocks/', stock.id]);
       }, error => this.saveFailed = true);
   }

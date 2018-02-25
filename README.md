@@ -32,6 +32,7 @@ run ./create_image.sh in each project.
 
 # How to run
 Project contains docker-compose.yml file to run both containers.
+run docker-compose up -d
 
 # How to run as developer
 - backend:  run AssignmentApplication.main from your IDE with spring profile dev

@@ -1,3 +1,5 @@
-./stocks-api/create_image.sh
-./stocks-ui/create_image.sh
-docker-compose up -d
+#!/bin/bash
+set -e
+
+sh -c 'cd stocks-api && ./create_image.sh'
+sh -c 'cd stocks-ui && ./create_image.sh'
