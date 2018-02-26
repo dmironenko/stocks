@@ -5,12 +5,12 @@ This project consists of:
 
 # Requirement
 Backend
-- Java 8
+- JDK 8
 
 Frontend
 - Angular CLI: 1.6.4
 - Node: 8.9.0
--Angular: 5.2.6
+- Angular: 5.2.6
 
 Docker
 
@@ -44,7 +44,7 @@ run ./create_image.sh in each project or ./create_images.sh from root
 
 # How to run
 Project contains docker-compose.yml file to run both containers.
-To run applications just run docker-compose up -d. Frontend will run on the port 80.
+To start applications(after images are built) run docker-compose up -d. Frontend will run on the port 80.
 
 # How to run as developer
 - backend:  run AssignmentApplication.main from your IDE with spring profile dev
