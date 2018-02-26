@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: stock-api
+  datasource:
+    url: jdbc:h2:mem:stock;mode=MySQL
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQLDialect
+  h2:
+    console:
+      enabled: true
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+
+liquibase:
+  enabled: true
+
+app:
+  init-data:
+    # is creation of initial data enabled
+    enabled: true
+    # size of initial data
+    size: 100

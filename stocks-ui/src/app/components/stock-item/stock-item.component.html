@@ -1,0 +1,31 @@
+<div *ngIf="stock?.id">
+  <h2>Update template {{stock.id}}</h2>
+</div>
+<div *ngIf="!stock?.id">
+  <h2>Create template</h2>
+</div>
+
+<form class="item-editor">
+  <mat-form-field class="editor-half-width">
+    <input matInput placeholder="Name" [formControl]="nameFormControl">
+  </mat-form-field>
+  <mat-form-field class="editor-half-width">
+    <input matInput placeholder="Price" [formControl]="priceFormControl">
+    <mat-error>
+      Please enter a valid price - not empty number
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <div *ngIf="stock?.id" class="material">
+    Last update: {{stock.lastUpdate | date:'medium'}}
+
+  </div>
+  <br>
+  <button mat-raised-button color="accent" (click)="saveForm()"
+          [disabled]="!(nameFormControl.valid && priceFormControl.valid)">Save stock
+  </button>
+  <mat-error *ngIf="saveFailed">
+    Failed to save stock. Try again later.
+  </mat-error>
+  <a mat-button color="primary" routerLink="stocks">Back to list</a>
+</form>

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  stocks-api:
+    image: "dmironenko/stocks-api:1.0.0"
+    ports:
+     - "8080:8080"
+  stocks-ui:
+    image: "dmironenko/stocks-ui:1.0.0"
+    ports:
+     - "80:80"
+    links:
+     - "stocks-api:stocks-api"
