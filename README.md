@@ -20,7 +20,7 @@ Frontend and backend are separate application and implemented to run in the sepa
 Backend is built on top of spring-boot
 - REST API          - spring-web
 - access db         - spring-data and Hibernate
-- in memory storage - H2
+- in memory storage - H2 + liquibase 
 
 In memory db + Hibernate is used to handle id-generation, concurrency and lastUpdate timestamp.
 
