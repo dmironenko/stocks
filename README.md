@@ -17,12 +17,12 @@ Docker
 # Technologies
 Frontend and backend are separate application and implemented to run in the separate docker containers.
 
-Backend build on top of spring-boot
+Backend is built on top of spring-boot
 - REST API          - spring-web
 - access db         - spring-data and Hibernate
 - in memory storage - H2
 
-In memory db + Hibernate is used to handle concurrency and lastUpdate timestamp.
+In memory db + Hibernate is used to handle id-generation, concurrency and lastUpdate timestamp.
 
 Frontend is angular application with material design.
 
